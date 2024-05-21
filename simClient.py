@@ -76,6 +76,7 @@ elif selection == '2':
         plt.title('Request Count per Server')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig('1.png')
         plt.show()
     if test_selection == '2':
         for i in range(0, 100):
@@ -93,6 +94,7 @@ elif selection == '2':
         plt.title('Request Count per Server')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig('2.png')
         plt.show()
     if test_selection == '3':
         for i in range(0, 1000):
@@ -112,6 +114,7 @@ elif selection == '2':
         plt.title('Request Count per Server')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig('3.png')
         plt.show()
     if test_selection == '4':
         for i in range(0, 1000):
@@ -131,6 +134,7 @@ elif selection == '2':
         plt.title('Request Count per Server')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig('4.png')
         plt.show()
     if test_selection == '5':
         servers_states = {}
@@ -155,6 +159,7 @@ elif selection == '2':
         plt.title('Request Count per Server')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig('5.png')
         plt.show()
         for server, state_counts in servers_states.items():
             plt.figure(figsize=(6, 4))
@@ -164,6 +169,7 @@ elif selection == '2':
             plt.title(f'Request Count per State for Server {server}')
             plt.xticks(rotation=45)
             plt.tight_layout()
+            plt.savefig(f'{server}.png')
             plt.show()
     pass
 else:
